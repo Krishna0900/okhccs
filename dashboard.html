@@ -119,7 +119,7 @@
           <div class="row">
             <div class="col-md-12">
 
-              <div class="mashup" id="provider_mash" data-pega-gadgetname='PegaGadget' data-pega-action='display'
+              <div data-pega-gadgetname='PegaGadget' data-pega-action='display'
                 data-pega-encrypted ='true' 
 data-pega-encrypted-hash = 'pzuiactionzzz=CXtpbn1Db243RlF3bTVtUjd2ajQzb3B0a1pZVmxKL21JZHdLRWp6WjVNdWRTMG0xNFdKdmFucDVXQ0lXU3RpM3FhelFkVDBKenY3VUdyWVRiOEVlazBnQy94VWppRUtheUlhL085aWcyRS8zaWtEWVVYWlZ2VHcyVWVtZWo4YnNsSU04MFdwNkkzRUE3ZUU0czdacEtIdkVRQ25PK1ZsNFMzNzJuQ3pxd0oxc3dpdGlNYXY2QzhXUlVXempoblhveTNhWGpFcldxUlNpUFRLTm9DV01JRklSN0VxOHNJTFlEUVd2V0N6YWduRmVqOWF3ckF4OTZNb1JiT2U0UTBFOERlZWN6L1RCNWJNNmVPaVg1eFpyQkJVNjFpUHpvVHhJUzNNZUZqUFpkK0NhR3R2eGQ1VThUUHlwaWNqdFl6UlhveHpMWmozcnhZMFgxb21lZVA3NGdwNHVuLzY5VjgxbHBNM094Z3c3cHhvVVhlUWVCS2lla1Zsd05hNG9zT1Z3RlQ4azNMd043QWJoV2sraVpRaW1PRmN1ajg4Q1B1UVcyRFNjdU5UemNVbm93cVhJZFhQeFFqVFcyWmk0TDVrTjg3WThIMDZtQUN6L3ZzUCtDMzRtRmxNOHBrMWpSZGp5cG5pU1gra2lPYndidlBxYz0%3D*' 
 data-pega-gadgetname ='PegaGadget' 
@@ -216,27 +216,6 @@ data-pega-action-param-parameters ='{"pzSkinName":"HCSelfServiceApp","pyMashupSk
 
   </div>
 
-  <script>
-    var loggedUser = localStorage.getItem("username");
-    if (loggedUser == undefined) {
-      window.location.replace("index.html?reason=wrongpassword");
-    }
-
-    if (loggedUser == "lisa") {
-      document.getElementById("UserType").innerHTML = "Dr. Lisa Binder";
-
-      document.getElementById("member_mash").style.display = "none";
-
-
-    } else {
-      document.getElementById("UserType").innerHTML = "Thomas Brown";
-      document.getElementById("provider_mash").style.display = "none";
-      document.getElementById("box_content").style.display = "none";
-
-
-
-    }
-  </script>
 
   <!--   Core JS Files   -->
   <script src="./assets/js/core/jquery.min.js"></script>
