@@ -20,10 +20,11 @@
   <link href="./assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet" />
   <link href="./assets/demo/demo.css" rel="stylesheet" />
   <link href="assets/css/custom-branding.css" rel="stylesheet" />
-    <script src="assets/js/custom.js"></script>
- <script src ='https://ipdemo.sbyteapps.com/prweb/app/TTECHCProviderSelfService_0427/?pyActivity=pzIncludeMashupScripts'></script>
-  <script src ='https://ipdemo.sbyteapps.com/prweb/app/TTECHCProviderSelfService_1392/?pyActivity=pzIncludeMashupScripts'></script>
-  <scriptid="pega-wm-chat" src="https://widget.use1.chat.pega.digital/a2881074-011f-4e8b-b804-d13123abeabf/widget.js"></script>
+  <script src='https://den01hc000peg01.lab.local/prweb/app/default/?pyActivity=pzIncludeMashupScripts'></script>
+  <script src="assets/js/custom.js"></script>
+  <script src='PegaChat/PegaHelper.js'></script>
+  <script src='PegaChat/PegaHelperExtension.js'></script>
+  <link rel="stylesheet" type="text/css" href="PegaChat/PegaStyles.css?nocache=20200811T095749.819GMT">
 
   <style>
     .main-panel {
@@ -54,7 +55,7 @@
     <div class="sidebar" data-color="white" data-active-color="danger">
       <div class="logo">
 
-        <a href="member.html" class="simple-text logo-normal">
+        <a href="dashboard.html" class="simple-text logo-normal">
 
           <div class="logo-image-big text-center">
             <img src="assets/img/Oklahoma.png" title="Oklahoma Govt" style="width: 60%;">
@@ -64,7 +65,7 @@
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li class="active ">
-            <a href="member.html">
+            <a href="dashboard.html">
               <i class="nc-icon nc-world-2" style="margin-right: 5px;"></i>
               <p>Home</p>
             </a>
@@ -121,36 +122,35 @@
 
           <div class="row">
             <div class="col-md-12">
-<div class="mashup" id="provider_mash" data-pega-gadgetname ='PegaGadget' 
-data-pega-action ='display' 
-data-pega-action-param-harnessname ='DisplayProviderDetails' 
-data-pega-action-param-classname ='TTECHC-CS-Work-Grp1-UpdatePractitionerLicenses' 
-data-pega-action-param-model ='' 
-data-pega-action-param-readonly ='true' 
-data-pega-isdeferloaded ='false' 
-data-pega-applicationname ='TTECHCProviderSelfService' 
-data-pega-threadname ='Standard' 
-data-pega-channelID ='MASHUP6efd861af3b64e0485fd638d4f4a73d8' 
-data-pega-resizetype ='stretch' 
-data-pega-url ='https://ipdemo.sbyteapps.com/prweb/app/TTECHCProviderSelfService_0427/' 
-data-pega-action-param-parameters ='{"pzSkinName":"HCSelfServiceApp","pyMashupSkeletonName":"pyDefaultMashupSkeleton","UserIdentifier":"ProviderHarness","Password":"cnVsZXM="}' ></div>
 
-<div class="mashup"  id="member_mash" data-pega-gadgetname ='PegaGadget' 
-data-pega-action ='display' 
-data-pega-action-param-harnessname ='DisplayMemberDetails' 
-data-pega-action-param-classname ='TTECHC-CS-Work-Grp1-UpdateContactName' 
-data-pega-action-param-model ='' 
-data-pega-action-param-readonly ='true' 
-data-pega-isdeferloaded ='false' 
-data-pega-applicationname ='TTECHCProviderSelfService' 
-data-pega-threadname ='Standard' 
-data-pega-channelID ='MASHUP16f0f3cf04ef4b438e625e501a2206b4' 
-data-pega-resizetype ='stretch' 
-data-pega-url ='https://ipdemo.sbyteapps.com/prweb/app/TTECHCProviderSelfService_1392/' 
-data-pega-action-param-parameters ='{"pzSkinName":"HCSelfServiceApp","pyMashupSkeletonName":"pyDefaultMashupSkeleton","UserIdentifier":"MemberHarness","Password":"cnVsZXM="}' ></div>
- 
-              
-              
+              <div class="mashup" id="provider_mash" data-pega-gadgetname='PegaGadget' data-pega-action='display'
+                data-pega-action-param-harnessname='DisplayProviderDetails'
+                data-pega-action-param-classname='TTECHC-CS-Work-Grp1-UpdatePractitionerLicenses'
+                data-pega-action-param-model='' data-pega-action-param-readonly='true' data-pega-isdeferloaded='false'
+                data-pega-applicationname='HCSelfServiceApp' data-pega-threadname='PractitionerLicense'
+                data-pega-resizetype='stretch'
+                data-pega-action-param-parameters='{"UserIdentifier":"ProviderHarness","Password":"cnVsZXM=","pzSkinName":"HCSelfServiceApp","pyMashupSkeletonName":"pyDefaultMashupSkeleton"}'
+                data-pega-redirectguests='false'
+                data-pega-url='https://den01hc000peg01.lab.local/prweb/app/HCSelfServiceApp_4616/'></div>
+
+
+              <div class="mashup"  id="member_mash" data-pega-gadgetname='PegaGadgets' data-pega-action='display' style="width:100%;height:1280px;overflow-x: hidden;"
+                data-pega-action-param-harnessname='DisplayMemberDetails'
+                data-pega-action-param-classname='TTECHC-CS-Work-Grp1-UpdateContactName' data-pega-action-param-model=''
+                data-pega-action-param-readonly='true' data-pega-isdeferloaded='false'
+                data-pega-applicationname='HCSelfServiceApp' data-pega-threadname='MemberProfile'
+                data-pega-resizetype='fixed'
+                data-pega-action-param-parameters='{"UserIdentifier":"MemberHarness","Password":"cnVsZXM=","pzSkinName":"HCSelfServiceApp","pyMashupSkeletonName":"pyDefaultMashupSkeleton"}'
+                data-pega-redirectguests='false'
+                data-pega-url='https://den01hc000peg01.lab.local/prweb/app/HCSelfServiceApp_6953/'></div>
+
+
+<!--
+                <iframe src="mashup.html" id="member_360" frameborder="0" width="100%" height="100%"></iframe>
+
+-->
+
+
               <div class="row" id="box_content">
 
                 <div class="col-md-4">
@@ -213,6 +213,28 @@ data-pega-action-param-parameters ='{"pzSkinName":"HCSelfServiceApp","pyMashupSk
 
   </div>
 
+  <script>
+    var loggedUser = localStorage.getItem("username");
+    if (loggedUser == undefined) {
+      window.location.replace("index.html?reason=wrongpassword");
+    }
+
+    if (loggedUser == "lisa") {
+      document.getElementById("UserType").innerHTML = "Dr. Lisa Binder";
+
+      document.getElementById("member_mash").style.display = "none";
+      document.getElementById("member_360").style.display = "none";
+
+
+    } else {
+      document.getElementById("UserType").innerHTML = "Thomas Brown";
+      document.getElementById("provider_mash").style.display = "none";
+      document.getElementById("box_content").style.display = "none";
+
+
+
+    }
+  </script>
 
   <!--   Core JS Files   -->
   <script src="./assets/js/core/jquery.min.js"></script>
@@ -221,24 +243,5 @@ data-pega-action-param-parameters ='{"pzSkinName":"HCSelfServiceApp","pyMashupSk
   <script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
   <script src="./assets/js/paper-dashboard.min.js?v=2.0.1" type="text/javascript"></script>
 </body>
- 
-    <script>
-    var loggedUser = localStorage.getItem("username");
-    if (loggedUser == undefined) {
-      window.location.replace("index.html?reason=wrongpassword");
-    }
-
-    if (loggedUser == "lisa") {
-      document.getElementById("UserType").innerHTML = "Dr. Lisa Binder";
-      document.getElementById("box_content").style.display = "none";
-      document.getElementById("member_mash").style.display = "none";
-  
-    } else {
-      document.getElementById("UserType").innerHTML = "Thomas Brown";
-      document.getElementById("provider_mash").style.display = "none";
-      document.getElementById("box_content").style.display = "none";
-
-    }
-  </script>
 
 </html>
